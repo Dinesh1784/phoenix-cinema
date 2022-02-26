@@ -23,7 +23,7 @@ const settings = {
 
 const movieFetcher = async () => {
   const list = await fetch(
-    "http://api.themoviedb.org/3/movie/now_playing?api_key=1fb720b97cc13e580c2c35e1138f90f8"
+    "http://api.themoviedb.org/3/movie/now_playing?api_key=${APIKEY}"
   );
   return list.json();
 };
